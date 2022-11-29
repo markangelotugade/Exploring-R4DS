@@ -1,0 +1,34 @@
+---
+  title: "Exploring R4DS"
+author: "Mark Angelo Tugade"
+output:
+  html_notebook: default
+word_document: default
+---
+  # Introduction
+  
+  The **sun** is not ***shining***. We are having **classes** and it is noisy outside. However, the students are very eager to learn.  
+
+### Continuation
+
+The noise continues.
+
+To install a package, use the following code: `install.packages("tidyverse")`
+
+# ***Exploring Diamonds Dataset***
+
+```{r}
+library(ggplot2)
+data(diamonds)
+head(diamonds)
+```
+
+
+library(tidyverse)
+ggplot(data = mpg) +
+  geom_point(mapping = aes(x = displ, y = hwy, size = class))
+
+library(tidyverse)
+ggplot(data = mpg) +
+  geom_point(mapping = aes(x = displ, y = hwy))
+
